@@ -18,7 +18,7 @@ Create two directories - one that contains short-read fastq files and another th
 **rc_primer2:** reverse complement of primer2 (default: CCCAGCAATATCAG)<br/>
 **processor:** number of processors (default: 4)<br/>
 
-
+Run ```bash TASSEL.sh``` in the directory that contains directories for short-read and long-read fastq files.<br/>
 
 #### Dependencies
 **hisat2:** hisat2 can be obtained from (http://daehwankimlab.github.io/hisat2/download/) or ```conda install -c bioconda hisat2```<br/>
