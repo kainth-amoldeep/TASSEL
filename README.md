@@ -5,9 +5,9 @@ TASSEL is a hybrid transcript assembly pipeline that merges transcriptome from s
 ### Usage
 Create two directories - one that contains short-read fastq files and another that contains long-read fastq files that you want to merge.<br/>
 <br/>
-**User input is required for following variables:**<br/>
+**User input is required for the following variables within the script:**<br/>
 **hisat_indices:** provide path to hisat indices<br/>
-**rnastranded:** provided type of strandedness for short-reads (options:F,R; default: R)<br/>
+**rnastranded:** provided type of strandedness for short-reads (options: F, R; default: R)<br/>
 **referenceGTF:** provide path to reference_annotation_file (required for guided assembly)<br/>
 **referenceFASTA:** provide path to reference_fasta_file<br/>
 **shortread_fastq_dir:**  provide path to directory that contains only short-read fastq files<br/>
@@ -15,14 +15,14 @@ Create two directories - one that contains short-read fastq files and another th
 **library_type:** for library strandedness (options: --rf (for first strand), --fr (for second strand); default --rf)<br/>
 **primer1:** sequence of primer used for first strand synthesis during long-read cDNA library prep; limit to 15 nt (default: GCTCTATCTTCTTT)<br/>
 **primer2:** sequence of primer used for second strand synthesis (strand switching) during long-read cDNA library prep; limit to 15 nt (default: CTGATATTGCTGGG)<br/>
-**rc_primer2:** reverse complement of primer2 (default:CCCAGCAATATCAG)<br/>
+**rc_primer2:** reverse complement of primer2 (default: CCCAGCAATATCAG)<br/>
 **processor:** number of processors (default: 4)<br/>
 
 
 
 #### Dependencies
-**hisat2** <br/>
-**samtools**<br/>
-**StringTie2**<br/>
-**seqkit**<br/>
-**minimap2**<br/>
+**hisat2:** hisat2 can be obtained from (http://daehwankimlab.github.io/hisat2/download/) or ```conda install -c bioconda hisat2```<br/>
+**samtools:** samtools can be obtained from (http://www.htslib.org/download/) or ```conda install -c bioconda samtools```<br/>
+**StringTie2:** StringTie2 can be obtained from (https://ccb.jhu.edu/software/stringtie/index.shtml) or ```conda install -c bioconda stringtie```<br/> 
+**seqkit:** seqkit can be obtained from (https://bioinf.shenwei.me/seqkit/) or ```conda install -c bioconda seqkit```<br/>
+**minimap2:** seqkit can be obtained from (https://github.com/lh3/minimap2#install) or ```conda install -c bioconda minimap2```<br/>
