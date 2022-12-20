@@ -26,3 +26,6 @@ Run ```bash TASSEL.sh``` in the directory that contains directories for short-re
 **StringTie2:** StringTie2 can be obtained from (https://ccb.jhu.edu/software/stringtie/index.shtml) or ```conda install -c bioconda stringtie```<br/> 
 **seqkit:** seqkit can be obtained from (https://bioinf.shenwei.me/seqkit/) or ```conda install -c bioconda seqkit```<br/>
 **minimap2:** seqkit can be obtained from (https://github.com/lh3/minimap2#install) or ```conda install -c bioconda minimap2```<br/>
+
+#### Citation
+If you use or discuss this method, please cite: Merging short and stranded long reads improves transcript assembly. Amoldeep S. Kainth, Gabriela A. Haddad, Johnathon M. Hall, Alexander J. Ruthenburg; bioRxiv 2022.12.13.520317; doi: https://doi.org/10.1101/2022.12.13.520317
