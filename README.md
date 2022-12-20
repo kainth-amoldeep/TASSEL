@@ -1,6 +1,6 @@
 # TASSEL (Transcript Assembly using Short and Strand Emended Long reads)
 <img align="left" width="350" src="https://user-images.githubusercontent.com/66103719/196807655-e1bc74a1-cf67-47eb-ad26-90985af0fbae.png">
-TASSEL is a hybrid transcript assembly pipeline that merges transcriptome from short-read RNA-seq and long-read RNA-seq. The output is a merged transcritome file (gtf) which combines high depth of short-read sequencing with long-range information from long-read RNA-seq. The unique feature about TASSEL is that it strands the otherwise unstranded long reads using inbuilt *SLURP* methodology and then use them for transcript assembly. 
+TASSEL is a hybrid transcript assembly pipeline that merges transcriptome from short-read RNA-seq and long-read RNA-seq. The output is a merged transcriptome file (gtf) which combines high depth of short-read sequencing with long-range information from long-read RNA-seq. The unique feature about TASSEL is that it strands the otherwise unstranded long reads using inbuilt *SLURP* methodology and then use them for transcript assembly. 
 
 ### Usage
 Create two directories - one that contains short-read fastq files and another that contains long-read fastq files that you want to merge.<br/>
@@ -11,7 +11,7 @@ Create two directories - one that contains short-read fastq files and another th
 **referenceGTF:** provide path to reference_annotation_file (required for guided assembly)<br/>
 **referenceFASTA:** provide path to reference_fasta_file<br/>
 **shortread_fastq_dir:**  provide path to directory that contains only short-read fastq files<br/>
-**longread_fastq_dir:** provide path to directory that contains only short-read fastq files<br/>
+**longread_fastq_dir:** provide path to directory that contains only long-read fastq files<br/>
 **library_type:** for library strandedness (options: --rf (for first strand), --fr (for second strand); default --rf)<br/>
 **primer1:** sequence of primer used for first strand synthesis during long-read cDNA library prep; limit to 15 nt (default: GCTCTATCTTCTTT)<br/>
 **primer2:** sequence of primer used for second strand synthesis (strand switching) during long-read cDNA library prep; limit to 15 nt (default: CTGATATTGCTGGG)<br/>
@@ -28,4 +28,5 @@ Run ```bash TASSEL.sh``` in the directory that contains directories for short-re
 **minimap2:** seqkit can be obtained from (https://github.com/lh3/minimap2#install) or ```conda install -c bioconda minimap2```<br/>
 
 #### Citation
-If you use or discuss this method, please cite: Merging short and stranded long reads improves transcript assembly. Amoldeep S. Kainth, Gabriela A. Haddad, Johnathon M. Hall, Alexander J. Ruthenburg; bioRxiv 2022.12.13.520317; doi: https://doi.org/10.1101/2022.12.13.520317
+If you use or discuss this method, please cite:<br/>
+Merging short and stranded long reads improves transcript assembly. Amoldeep S. Kainth, Gabriela A. Haddad, Johnathon M. Hall, Alexander J. Ruthenburg; bioRxiv 2022.12.13.520317; doi: https://doi.org/10.1101/2022.12.13.520317
