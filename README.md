@@ -29,4 +29,4 @@ Run ```bash TASSEL.sh``` in the directory that contains directories for short-re
 
 #### Citation
 If you use or discuss this method, please cite:<br/>
-Merging short and stranded long reads improves transcript assembly. Amoldeep S. Kainth, Gabriela A. Haddad, Johnathon M. Hall, Alexander J. Ruthenburg; bioRxiv 2022.12.13.520317; doi: https://doi.org/10.1101/2022.12.13.520317
+Kainth AS, Haddad GA, Hall JM, Ruthenburg AJ (2023) Merging short and stranded long reads improves transcript assembly. PLoS Comput Biol 19(10): e1011576. https://doi.org/10.1371/journal.pcbi.1011576
