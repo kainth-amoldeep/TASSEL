@@ -1,5 +1,8 @@
 # TASSEL (Transcript Assembly using Short and Strand Emended Long reads)
-<img align="left" width="350" src="https://user-images.githubusercontent.com/66103719/196807655-e1bc74a1-cf67-47eb-ad26-90985af0fbae.png">
+
+
+<img align="left" width="350" src="https://github.com/kainth-amoldeep/TASSEL/assets/66103719/daac1b66-6a69-409e-bae1-53562efd27a5">
+
 TASSEL is a hybrid transcript assembly pipeline that merges transcriptome from short-read RNA-seq and long-read RNA-seq. The output is a merged transcriptome file (gtf) which combines high depth of short-read sequencing with long-range information from long-read RNA-seq. The unique feature about TASSEL is that it strands the otherwise unstranded long reads using inbuilt *SLURP* methodology and then use them for transcript assembly. 
 
 ### Usage
